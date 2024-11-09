@@ -3,107 +3,146 @@ html {
     font-family: "Montserrat", sans-serif;
 }
 
+body {
+    margin: 10px;
+    background-color: antiquewhite;
+}
+
 header {
-    background-color: rgba(255, 255, 0, 0.644);
+    background-color: rgba(105, 54, 35, 0.603);
+    margin: 5px;
+    border-radius: 20px;
+    padding-right: 150px;
+    align-items: center;
+    justify-content: space-between;
     display: flex;
-    margin: 15px;
-    border-radius: 30px;
+}
+
+
+.logo-header {
+    width: 8%;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+#Introducao {
+    display: flex;
+    min-height: 250px;
     align-items: center;
 }
 
-body {
-    background-color: #F2A922;
-    font-size: 30px;
-
-
+#Introducao div {
+    width: 50%;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-top: 50px;
 }
 
-.explicacao {
+#sobre-nos {
+    padding-left: 70px;
+    padding-right: 70px;
+    background-color: rgba(109, 77, 64, 0.459);
+    border-radius: 20px;
+   min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
     text-align: center;
+}
+
+#produtos {
     padding-left: 100px;
     padding-right: 100px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    background-color: #bf563fa6;
-    border-radius: 70px;
 }
 
-.o-que-e {
-    margin-right: 20px;
-
-}
-
-#modo-de-jogo {
-    text-align: center;
-    padding-left: 120px;
-    padding-right: 120px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-
-.modos-extras {
-    text-align: center;
-    padding-left: 120px;
-    padding-right: 120px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    flex-direction: column;
-    align-items: center;
-}
-
-#parcerias {
-    margin-top: 180px;
-    text-align: center;
-    padding-left: 120px;
-    padding-right: 120px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    flex-direction: column;
-    align-items: center;
-}
-
-.godzilla {
+#produtos h2 {
     margin-top: 70px;
-
+    margin-bottom: 70px;
+    text-align: center;
 }
 
-#Brawlers {
-
-    text-align: center;
-    padding-left: 120px;
-    padding-right: 120px;
+.conteudo-produtos {
     display: flex;
     justify-content: space-between;
-    align-content: center;
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 80px;
+    background-color: rgba(70, 52, 20, 0.568);
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.tabela {
+.produto {
+    width: 200px;
     text-align: center;
-    padding-left: 120px;
-    padding-right: 120px;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    flex-direction: column;
-    align-items: center;
 }
 
 footer {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-
+    margin: 0px;
     text-align: center;
+    padding-top: 25px;
 
 
+}
 
+footer p {
+    margin: 0;
+}
+
+.direitos-autorais {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+
+@media (max-width: 875px){
+    #Introducao{
+        flex-direction: column;
+        text-align: center;       
+    }
+    header{
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .logo-header{
+        width: 100px;
+    }
+    #Indroducao div{
+        padding-right: 0;
+        padding-left: 0;
+        width: 80%;
+
+    }
+
+    .conteudo-produtos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #produtos {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .menu ul{
+        padding-left: 0;
+        margin: auto;
+    }
+
+    #sobre-nos{
+        text-align: center;
+    }
 }
